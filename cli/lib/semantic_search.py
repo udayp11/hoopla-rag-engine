@@ -165,7 +165,7 @@ def chunk_text(text: str, chunk_size: int = DEFAULT_CHUNK_SIZE, overlap: int =DE
     for i, chunk in enumerate(chunks):
         print(f"{i + 1}. {chunk}")
 
-def semantic_chunk_text(text: str,max_chunk_size: int = DEFAULT_SEMANTIC_CHUNK_SIZE,overlap: int = DEFAULT_CHUNK_OVERLAP,) -> None:
+def semantic_chunk_text(text: str,max_chunk_size: int = DEFAULT_CHUNK_SIZE,overlap: int = DEFAULT_CHUNK_OVERLAP,) -> None:
     text = text.strip()
     if not text:
         return []
